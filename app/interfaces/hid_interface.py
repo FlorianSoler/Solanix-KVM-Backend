@@ -22,6 +22,12 @@ class HIDInterface(ABC):
         pass
 
     @abstractmethod
+    def mouse_click(self, button: str):
+        """Press mouse click button"""
+        pass
+
+
+    @abstractmethod
     def disconnect(self):
         """Clean up and close the connection to the HID device."""
         pass
